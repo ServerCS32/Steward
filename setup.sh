@@ -66,6 +66,7 @@ if ! package_installed cloudflared; then
     echo "Cloudflared installed successfully."
 else
     echo "Cloudflared is already installed."
+    sudo cloudflared service install
 fi
 
     # Removing old tunnels named steward
